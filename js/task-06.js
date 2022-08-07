@@ -8,9 +8,9 @@ function validInput(event) {
     const element = event.currentTarget;
     const limit = parseInt(element.dataset.length, 10);
     console.dir(limit);
-    console.log(element.value.length >= limit)
+    console.log(element.value.length == limit)
     console.log(element.value.length);
-    if (element.value.length >= limit) {
+    if (element.value.length == limit) {
         element.classList.add('valid');
         element.classList.remove('invalid');
     }
